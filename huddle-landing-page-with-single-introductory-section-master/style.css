@@ -1,0 +1,175 @@
+*,
+*::before,
+*::after{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+ background-image:url('/images/bg-desktop.svg'); 
+ background-color:hsl(257, 40%, 49%);
+}
+
+main{
+    margin-left:80px;
+}
+.logo{
+    margin-top:64px;
+    width:200px;
+    height:32px;
+}
+
+.main-content{
+    display:flex;
+    margin-top:104px;
+}
+
+.left-col{
+    width:696px;
+    height:493px;
+}
+
+.right-col{
+    padding:32px;
+    color:#fff;
+    margin-left:27px;
+}
+
+.content{
+    width:520px;
+    height:225px;
+}
+
+.content h1{
+    font-size:40px;
+    font-weight:600;
+    line-height:60px;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom:0;
+}
+
+.content p{
+    font-family: 'Open Sans', sans-serif;
+    font-size:18px;
+    font-weight:400;
+    line-height:27px;
+    margin-top:30px;
+}
+
+.right-col .btn{
+    width:200px;
+    height:56px;
+    font-family: 'Open Sans', sans-serif;
+    color:#684BB1;
+    background:#fff;
+    border-radius:32px;
+    font-size:1rem;
+    letter-spacing:0.5px;
+    outline:none;
+    border:none;
+    cursor:pointer;
+    transition:all 0.3s ease-in-out;
+    margin-top:30px;
+}
+
+.right-col .btn:hover{
+    color:#fff;
+    background:#E880E8;
+}
+
+footer{
+    display:flex;
+    justify-content:flex-end;
+    margin-right:80px;
+}
+
+.social-icons{
+    width:152px;
+    height:40px;
+    display:flex;
+    justify-content:space-between;
+}
+
+.icon{
+    width:40px;
+    height:40px;
+    border-radius:50%;
+    border:1px solid #fff;
+    display:grid;
+    place-items:center;
+}
+
+.icon i{
+    color:#fff;
+}
+
+.icon:hover{
+    border:1px solid #E880E8;
+}
+
+.icon:hover i{
+    color:#E880E8;
+}
+
+@media only screen and (max-width: 1024px){
+    .logo{
+        width:120px;
+        height:19px;
+        margin-top:38.2px;
+    }
+    main{
+        margin-left:0;
+    }
+    .main-content{
+        flex-direction:column;
+        align-items:center;
+        margin-top:88.8px;
+    }
+
+    .left-col{
+        width:296px;
+        height:209px;
+     }
+
+     .left-col img{
+         width:100%;
+     }
+
+     .content{
+         width:304px;
+         height:272px;
+     }
+
+     .content h1{
+         font-size:24px;
+         line-height:36px;
+         text-align:center;
+     }
+
+     .content p{
+         font-size:16px;
+         line-height:24px;
+         text-align:center;
+     }
+
+     .right-col{
+         margin-left:0;
+         display:flex;
+         flex-direction:column;
+         align-items:center;
+     }
+     .right-col .btn{
+         width:200px;
+         height:40px;
+         margin-top:0;
+     }
+     footer{
+         justify-content:center;
+         margin-right:0;
+     }
+     .icon{
+         width:28px;
+         height:28px;
+     }
+}
